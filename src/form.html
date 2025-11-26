@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/mens.js" defer></script>
+</head>
+<body>
+    <header class="sitio-header">
+        <div class="header">
+            <a href="index.html" class="logo"><img src="multimedia/logo.jpg" alt="Logo de Santo Riel">SANTO RIEL</a>
+            <nav class="links">
+                <a href="index.html#inicio" class="texto-links">Inicio</a>
+                <a href="index.html#biogr" class="texto-links">Quienes somos</a>
+                <a href="index.html#albums" class="texto-links">Albums</a>
+                <a href="media.html#videos" class="texto-links">Videos</a>
+                <a href="media.html#fechas" class="texto-links">Fechas</a>
+                <a href="media.html#galeria" class="texto-links">Galeria</a>
+                <a href="form.html" class="texto-links">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor"> 
+        <h1>Formulario de Colaboración</h1>
+        <form id="formularioColaboracion">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono" name="telefono">
+            </fieldset>
+            <fieldset>
+                <legend>Contanos</legend>
+                <label for="motivo">Motivo de Contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="booking">Contrataciones</option>
+                    <option value="prensa">Prensa / Entrevista</option>
+                    <option value="fanmail">Pregunta a la Banda</option>
+                    <option value="general">General / Otro</option>
+                </select>
+                <label for="mensaje">Tu Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" cols="50" required placeholder="Escribe tu consulta o comentario aquí.">
+                </textarea>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensaje-confirmacion" style="display: none;">
+            <p class="mensaje-exito textos" style="background-color: #333; padding: 15px; border-radius: 5px; border: 2px solid #9e0a0a;">
+                ✅ ¡Mensaje enviado con éxito! Nos pondremos en contacto pronto. 🤘
+            </p>
+        </div>
+    </main>
+    <footer class="sitio-footer">
+        <div class="footer-contenido">
+            <p>Organizado por Lucas Echeverz 2025</p>
+            <div class="redes-sociales">
+                <a href="https://www.youtube.com/channel/UCavW11cMXK9K1U6baEQycCA" target="_blank" class="icono-red">🎸 YouTube</a> 
+                <a href="https://www.instagram.com/santo.riel/" target="_blank" class="icono-red">📸 Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100093692963446&sk=photos_of" target="_blank" class="icono-red">✉️ Facebook</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
